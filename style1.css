@@ -1,0 +1,76 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   position: relative;
+   left:400px
+}
+.form #username,#password{
+   width:400px;
+   height: 50px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#submit{
+   margin: 20px;
+   width: 500px;
+   height: 50px;
+   border-radius: 10px;
+   position: relative;
+   right:70px;
+   bottom:60px;
+   background-color: cadetblue;
+}
+@keyframes shake {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+   40% { transform: translate(1px, -1px) rotate(1deg); }
+   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { transform: translate(-3px, 1px) rotate(0deg); }
+   70% { transform: translate(3px, 1px) rotate(-1deg); }
+   80% { transform: translate(-1px, -1px) rotate(1deg); }
+   90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+ }
+#msg,#msg1,#msg2{
+   color:red;
+   font-size:1.5em;
+animation: shake 0.8s;
+animation-iteration-count:calc(3);
+}
+.bg{
+    position: relative;
+    bottom:100px
+}
+h1{
+   position: relative;
+   left:400px;
+   box-shadow: 10px 5px 5px red;
+   box-shadow: 10px 5px 5px pink;
+   background-color: #cb54a0;
+}
+.details{
+    position: relative;
+    top:600px;
+    left:1000px;
+    display: flex;
+    flex-direction: column;
+}
+img{
+   animation: color 9s infinite linear; 
+       box-shadow: 10px 5px 5px red;
+   box-shadow: 10px 5px 5px pink;
+}
+@keyframes color {
+   0%   { background: rgb(212, 167, 212); }
+   20%  { background:purple; }
+   40%  { background: #d662ab; }
+   60%  { background: rgb(179, 92, 179); }
+   80%  { background: rgb(197, 109, 197); }
+   100% { background: #dcb0d2; }
+ }
+ body {
+      animation: color 9s infinite linear;
+ }
